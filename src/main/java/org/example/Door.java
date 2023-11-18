@@ -8,9 +8,15 @@ package org.example;
 public class Door {
 
     private PresencePrize presencePrize;
+    private int number;
 
-    public Door(PresencePrize presencePrize) {
+    public Door(int number, PresencePrize presencePrize) {
+        this.number = number;
         this.presencePrize = presencePrize;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     public PresencePrize getPresencePrize() {
